@@ -1,0 +1,39 @@
+.mapParent
+{  
+    height: 100vh;
+    display: flex;
+}
+
+.map, .list
+{
+    flex: 1;
+}
+
+.map{
+    margin-top: 8vh;
+    height:92vh;
+}
+
+.navBar
+{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    background: #30363B;
+    color: white;
+    font-weight: 600;
+    padding: 0;
+    text-align: center;
+}
+
+.navBar img{
+    height: 60px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .mapParent {
+    flex-direction: column;
+    }
+    
+  }

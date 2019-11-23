@@ -8,6 +8,15 @@ import { Routes, RouterModule } from '@angular/router';
 import {LoginComponent} from './login/login.component';
 import {MapComponent} from './map/map.component';
 import {ListComponent} from './list/list.component';
+import {MatTableModule} from '@angular/material/table';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatRippleModule,
+  MatPaginatorModule,MatSortModule
+} from '@angular/material';
+
 
 const routes: Routes = [{
   path:'',
@@ -16,10 +25,6 @@ const routes: Routes = [{
 {
   path:'map',
   component:MapComponent
-},
-{
-  path:'list',
-  component:ListComponent
 }
 ];
 
@@ -31,8 +36,12 @@ const routes: Routes = [{
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,RouterModule.forRoot(routes),
-    MatCardModule
+    BrowserAnimationsModule,RouterModule.forRoot(routes),MatTableModule,
+    MatCardModule,
+    MatButtonModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatRippleModule,MatPaginatorModule,MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
